@@ -40,7 +40,7 @@
       var curso = [
       {
 
-      nombre: "María Ignacia Clark",
+      nombre: "María Clark",
 
       ingreso:2016,
 
@@ -53,10 +53,33 @@
       {titulo: "Flores",imagen:"https://raw.githubusercontent.com/mariaignaciaclark/ev2/gh-pages/imagenes/trabajo3.jpg"}
 
       ]
+
+    },
+
+       {nombre: "Rosario Gonzalez",
+
+      ingreso:2016,
+
+      trabajos:[
+
+      {titulo:"Diseño de emergencias",imagen:"https://raw.githubusercontent.com/rosariogonzalez/Evaluacion_02/gh-pages/IMG/trabajo2.jpg"},
+
+      {titulo:"Diseño de marca para emprendimiento",imagen:"https://raw.githubusercontent.com/rosariogonzalez/Evaluacion_02/gh-pages/IMG/trabajo1.jpg"},
+
+      {titulo:"Luminaria de Yeso",imagen:"https://raw.githubusercontent.com/rosariogonzalez/Evaluacion_02/gh-pages/IMG/trabajo3.jpg"}
+
+      ]
     }
     ]
+      $.each(curso, function(i, integrante) {
+            $("#cuestiones").append("<h2 class='mt-5 p-2 bg-azul text-white'>" + integrante.nombre + "</h2>");
 
-      $("#cuestiones").append('<h2>'+curso[0].nombre+'<h2>').append('<h4>' + curso [0]. ingreso + '<h4>').append('<img src="'+ curso [0].trabajos [0]. imagen + '">');
+          $.each(integrante.trabajos, function(i, trabajo) {
+              $("#cuestiones").append("<h5 class='my-2 py-3 pl-2'>" + trabajo.titulo + "</h5>").append("<img src='" + trabajo.imagen + "'class='img-fluid border-bottom pb-3 mb-3'>");
+          });
+        });
+        
+    
     </script>
   </body>
 </html>
