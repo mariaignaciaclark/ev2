@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+	background: silver;
+}
+
+h2{
+	font-family: 'Lato';
+	font-weight: 400;
+}
+
 #menu{
 	position: fixed;
-	bottom:2rem;
+	bottom: 2rem;
 	right:2.5rem;
 }
+
+
 .bg-azul{
 	background:rgba(217,111,113);
 
