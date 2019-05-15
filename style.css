@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('@import url('https://fonts.googleapis.com/css?family=Montserrat);
+
+html,body{
+	min-height:100%;
+}
+
 
 body {
 	background: silver;
 }
 
 h2{
-	font-family: 'Lato';
+	font-family: 'Montserrat', sans-serif;';
 	font-weight: 400;
 }
 
